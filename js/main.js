@@ -5,8 +5,25 @@ let TopSwiper = new Swiper(".top__swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+      },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        1400: {
+            spaceBetween: 20,
+        },
+        1000: {
+            spaceBetween: 15,
+        },
+        720: {
+            spaceBetween: 10,
+        },
+        320: {
+            spaceBetween: 7,
+        }
+    }
 });
 
 
@@ -35,18 +52,87 @@ let swiper = new Swiper(".selection__swiper", {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1150: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        770: {
+            slidesPerView: 1,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 38,
+        },
+        570: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 1,
+        }
+    }
 });
 
 
 let accessoriesSwiper = new Swiper(".accessories__swiper", {
     slidesPerView: 5,
-    spaceBetween: 20,
+    spaceBetween: 20,    
     navigation: {
         nextEl: ".swiper-button-next3",
         prevEl: ".swiper-button-prev3",
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        1400: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        1150: {
+            slidesPerView: 4,
+            spaceBetween: 45,
+        },
+        1050: {
+            slidesPerView: 4,
+            spaceBetween: 11,
+        },
+        950: {
+            slidesPerView: 3,
+            spaceBetween: 76,
+        },
+        850: {
+            slidesPerView: 3,
+            spaceBetween: 26,
+        },
+        800: {
+            slidesPerView: 3,
+            spaceBetween: 11,
+        },
+        720: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        570: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 1,
+        }
+    }
 });
 
 
@@ -61,3 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   
   })
+
+
+  $(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.top-menu').toggleClass('open-menu');
+        $('body').toggleClass('fixed-page');
+	});
+});

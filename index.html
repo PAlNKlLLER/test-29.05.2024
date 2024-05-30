@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <div class="container1440">
+        <div class="container">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
@@ -21,9 +21,12 @@
                             <a class="city__link" href="#">
                                 <img class="city__img" src="images/placemark.svg" alt="#">
                             </a>
-                            <p class="city__title">Нижний Новгород</p>
+                            <p class="city__title"><a class="city__link" href="#">Нижний Новгород</a></p>
                         </div>
-                        <div class="top-menu">
+                        <div class="menu-burger__header">
+                            <span></span>
+                        </div>
+                        <nav class="top-menu">
                             <ul class="top-menu__list">
                                 <li class="top-menu__item">
                                     <a class="top-menu__link" href="#">Как заказать</a>
@@ -41,14 +44,14 @@
                                     <a class="top-menu__link drop-menu" href="#">Частые вопросы</a>
                                     <div class="drop-menu__list-wrapper">
                                         <div class="drop-menu__list">
-                                            <a class="drop-menu__link">О нас</a>
-                                            <a class="drop-menu__link">Отзывы</a>
-                                            <a class="drop-menu__link">Гарантии</a>
+                                            <a class="drop-menu__link" href="#">О нас</a>
+                                            <a class="drop-menu__link" href="#">Отзывы</a>
+                                            <a class="drop-menu__link" href="#">Гарантии</a>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
                         <div class="phone">
                             <a class="phone-max" href="tel:+7 (347) 292-62-52">+7 (347) 292-62-52</a>
                             <a class="phone-mini" href="tel:+7 (347) 292-62-52"><img src="images/tel.svg" alt=""></a>
@@ -57,58 +60,55 @@
                 </div>
             </div>
             <div class="header__main">
-                <div class="container">
-                    <div class="header__main-inner">
-                        <div class="header__main-flex">
-                            <div class="logo">
-                                <a class="logo__link" href="#">
-                                    <h2>Test</h2>
-                                </a>
-                                <p class="logo__title">Сеть мебельных магазинов</p>
-                            </div>
-                            <div class="header__catalog-search">
-                                <div class="header__main-menu main-menu">
-                                    <input class="side-menu" type="checkbox" id="side-menu" />
-                                    <label class="hamb" for="side-menu"><img class="hamb-icon"
-                                            src="/images/burger-katalog.svg" alt=""><span
-                                            class="hamb-title">Каталог</span></label>
-                                    <nav class="nav">
-                                        <ul class="menu">
-                                            <li><a href="#">Спальня</a></li>
-                                            <li><a href="#">Кухня</a> </li>
-                                            <li><a href="#">Ванна</a></li>
-                                            <li><a href="#">Зал</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <div class="header__search-block">
-                                    <form>
-                                        <input type="text" name="text" class="search"
-                                            placeholder="Например, двухъярусная кровать">
-                                        <input type="submit" name="submit" class="submit" value="">
-                                    </form>
-                                </div>
-                            </div>
+                <div class="header__main-inner">
+                    <div class="header__main-flex">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <h2>Test</h2>
+                            </a>
+                            <p class="logo__title">Сеть мебельных магазинов</p>
                         </div>
-                        <div class="">
-                            <div class="header__main-nav">
-                                <div class="header__favorites"><img src="/images/favs.svg" alt=""></div>
-                                <div class="header__adress">
-                                    <p class="header__adress-title">Адреса</p>
-                                    <img class="header__adress-img" src="/images/placemark.svg" alt="">
-                                </div>
-                                <div class="header__profile">
-                                    <p class="header__profile-title">Профиль</p>
-                                    <img class="header__profile-title" src="/images/profile.svg" alt="">
-                                </div>
-                                <div class="header__cart">
-                                    <img class="header__cart-img" src="/images/cart.svg" alt="">
-                                    <p class="header__cart-title">1</p>
-                                </div>
+                        <div class="header__catalog-search">
+                            <div class="header__main-menu main-menu">
+                                <input class="side-menu" type="checkbox" id="side-menu" />
+                                <label class="hamb" for="side-menu"><img class="hamb-icon"
+                                        src="/images/burger-katalog.svg" alt=""><span
+                                        class="hamb-title">Каталог</span></label>
+                                <nav class="nav">
+                                    <ul class="menu">
+                                        <li><a href="#">Спальня</a></li>
+                                        <li><a href="#">Кухня</a> </li>
+                                        <li><a href="#">Ванна</a></li>
+                                        <li><a href="#">Зал</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__search-block">
+                                <form>
+                                    <input type="text" name="text" class="search"
+                                        placeholder="Например, двухъярусная кровать">
+                                    <input type="submit" name="submit" class="submit" value="">
+                                </form>
                             </div>
                         </div>
                     </div>
+                    <div class="header__main-nav">
+                        <div class="header__favorites"><img src="/images/favs.svg" alt=""></div>
+                        <div class="header__adress">
+                            <p class="header__adress-title"><a href="#">Адреса</a></p>
+                            <img class="header__adress-img" src="/images/placemark.svg" alt="">
+                        </div>
+                        <div class="header__profile">
+                            <p class="header__profile-title"><a href="#">Профиль</a></p>
+                            <img class="header__profile-img" src="/images/profile.svg" alt="">
+                        </div>
+                        <div class="header__cart">
+                            <a href="#"><img class="header__cart-img" src="/images/cart.svg" alt=""></a>
+                            <p class="header__cart-title">1</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -146,6 +146,7 @@
                         <img class="swiper-slide__img" src="images/crosslines.svg" alt="">
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="container1440 container-arrow">
@@ -162,7 +163,7 @@
                 вариантов шкафов и комод с зеркалом. Обратите внимание, все модули комплекта вы можете приобрести по
                 отдельности. Коллекция «Натали» может быть выполнена в двух цветах: в темном оттенке «Орех», а также в
                 более светлом решении «Клен Ясень Бежевый» Рекомендуем Вам обязательно посмотреть видео спальни,
-                гостиной<br>и прихожей из коллекции «Натали».
+                гостиной <br class="break">и прихожей из коллекции «Натали».
             </p>
         </div>
     </section>
@@ -175,43 +176,43 @@
                 <form class="selection__list" method="get" action="" id="our-form">
                     <div>
                         <label class="checkbox-other" for="item-1">
-                            <h3>Кровать «Триумф» 160</h3><span class="price">8 000 ₽</span>
+                            <h3><a href="#">Кровать «Триумф» 160</a></h3><span class="price">8 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-1" id="item-1" value="8000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-2">
-                            <h3>Матрас средний</h3><span class="price">10 000 ₽</span>
+                            <h3><a href="#">Матрас средний</a></h3><span class="price">10 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-2" id="item-2" value="10000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-3">
-                            <h3>Тумба прикроватная</h3><span class="price">2 000 ₽</span>
+                            <h3><a href="#">Тумба прикроватная</a></h3><span class="price">2 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-3" id="item-3" value="2000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-4">
-                            <h3>Шкаф 4-дверный</h3><span class="price">10 000 ₽</span>
+                            <h3><a href="#">Шкаф 4-дверный</a></h3><span class="price">10 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-4" id="item-4" value="10000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-5">
-                            <h3>Комод</h3><span class="price">2 000 ₽</span>
+                            <h3><a href="#">Комод</a></h3><span class="price">2 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-5" id="item-5" value="2000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-6">
-                            <h3>Зеркало</h3><span class="price">2 000 ₽</span>
+                            <h3><a href="#">Зеркало</a></h3><span class="price">2 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-6" id="item-6" value="2000">
                     </div>
                     <div>
                         <label class="checkbox-other" for="item-7">
-                            <h3>Пуф</h3><span class="price">2 000 ₽</span>
+                            <h3><a href="#">Пуф</a></h3><span class="price">2 000 ₽</span>
                         </label>
                         <input type="checkbox" name="item-7" id="item-7" value="2000">
                     </div>
@@ -229,7 +230,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
@@ -238,7 +239,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
@@ -247,7 +248,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
@@ -256,7 +257,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
@@ -265,7 +266,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
@@ -296,7 +297,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -307,7 +308,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -318,7 +319,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -329,7 +330,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -340,7 +341,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -351,7 +352,7 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
@@ -362,14 +363,14 @@
                             <img class="swiper-slide__img" src="/images/square-crosslines.svg" alt="">
                             <div>
                                 <img class="swiper-slide__rating" src="/images/4.5-stars.svg" alt="">
-                                <h3>Кровать «Триумф»</h3>
+                                <h3><a href="#">Кровать «Триумф»</a></h3>
                                 <span class="old_price">18 000 ₽</span>
                                 <span class="price">8 000 ₽</span>
                                 <button class="submit-btn">В корзину<img src="images/plus.svg" alt="plus"></button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
                 <div class="container-arrow">
                     <div class="swiper-button-next3">
                         <img src="images/arrow-right_45x45.svg" alt="next">
@@ -390,8 +391,8 @@
                     <form method="get" action="send.html">
                         <div class="footer__form-flex">
                             <div class="footer__profile">
-                                <span><img class="footer-profile" src="images/footer-profile.svg" alt=""><input name="user"
-                                        placeholder="Ваше имя" required></span>
+                                <span><img class="footer-profile" src="images/footer-profile.svg" alt=""><input
+                                        name="user" placeholder="Ваше имя" required></span>
                             </div>
                             <div class="footer__phone">
                                 <span><img class="mobile-phone" src="images/mobile-phone.svg" alt=""><input type="text"
@@ -402,7 +403,10 @@
                                         placeholder="Ваша почта" required /></span>
                             </div>
                         </div>
-                        <button class="subscribe-btn" data-callback='onSubmit' data-action='submit'>Подписаться</button>
+                        <div class="footer__button">
+                            <button class="subscribe-btn" data-callback='onSubmit'
+                                data-action='submit'>Подписаться</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -434,7 +438,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="policy">Политика конфиденциальности</p>
+            <p class="policy"><a href="#">Политика конфиденциальности</a></p>
             <p class="rights">2020, МебельХолл. Все права защищены</p>
         </div>
     </footer>
